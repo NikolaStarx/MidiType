@@ -1,0 +1,29 @@
+{
+    "themes": {
+      "normal": {
+        "white": "#FFFFFF",
+        "black": "#000000",
+        "highlight": "#B4DCFF",
+        "toolbar": "#F0F0F0"
+      },
+      "dark": {
+        "white": "#505050",
+        "black": "#000000",
+        "highlight": "#FF8C00",
+        "toolbar": "#333333"
+      },
+      "retro": {
+        "white": "#F0E8D0",
+        "black": "#1E1E1E",
+        "highlight": "#C04040",
+        "toolbar": "#F8F0DC"
+      }
+    },
+    "custom": {
+      "white": "#FFFFFF",
+      "black": "#000000",
+      "highlight": "#B4DCFF",
+      "toolbar": "#DCDCDC"
+    }
+  }
+  

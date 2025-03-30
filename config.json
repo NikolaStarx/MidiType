@@ -1,0 +1,10 @@
+{
+  "main_mapping_path": "mappings/mapping1.json",
+  "alt_mapping_path": "mappings/mapping2.json",
+  "music_mode": true,
+  "instrument": "Piano",
+  "pedal_control": 64,
+  "repeat_delay": 0.35,
+  "repeat_rate": 10.0,
+  "repeat_enabled": true
+}

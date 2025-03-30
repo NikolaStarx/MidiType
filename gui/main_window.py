@@ -42,6 +42,12 @@ class MainWindow(QMainWindow):
         self.btn_open_editor.clicked.connect(self.open_mapping_editor)
         self.layout.addWidget(self.btn_open_editor)
 
+        # 添加连发功能开关
+        self.repeat_checkbox = QCheckBox("开启按键连发功能")
+        self.repeat_checkbox.setChecked(app_state.get("repeat_enabled", True))
+        self.repeat_checkbox.toggled.connect(self.toggle_repeat)
+        self.layout.addWidget(self.repeat_checkbox)
+
         # 新增：音乐模式开关和音色选择器
         # 音乐模式开关：勾选时开启音乐模式，否则关闭
         self.music_mode_checkbox = QCheckBox("开启音乐模式")
@@ -90,6 +96,11 @@ class MainWindow(QMainWindow):
         else:
             self.piano_overlay.show()
             self.btn_toggle_piano.setText("🎹 隐藏虚拟钢琴键盘")
+
+    def toggle_repeat(self, checked):
+        # 更新全局状态中的按键连发功能
+        app_state["repeat_enabled"] = checked
+        print(f"按键连发功能 {'开启' if checked else '关闭'}")
 
     def toggle_music_mode(self, checked):
         # 更新全局状态中的音乐模式标志

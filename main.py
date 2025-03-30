@@ -32,9 +32,9 @@ def midi_listener():
             for msg in inport:
                 # 对每条 MIDI 消息调用 handle_midi 进行处理
                 handle_midi(msg,
-                            repeat_enabled=repeat_enabled,
-                            repeat_delay=repeat_delay,
-                            repeat_rate=repeat_rate)
+                            repeat_enabled=app_state.get("repeat_enabled", True),
+                            repeat_delay=app_state.get("repeat_delay", 0.35),
+                            repeat_rate=app_state.get("repeat_rate", 10.0))
     except Exception as e:
         print(f"❌ MIDI 错误: {e}")
 
@@ -88,7 +88,10 @@ if __name__ == "__main__":
         "main_mapping": main_mapping,
         "alt_mapping": alt_mapping,
         "keyboard": Controller(),
-        "repeat_threads": {}
+        "repeat_threads": {},
+        "repeat_enabled": repeat_enabled,
+        "repeat_delay": repeat_delay,
+        "repeat_rate": repeat_rate
     })
 
     # 创建 PyQt5 应用对象，并构造程序主窗口

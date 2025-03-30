@@ -48,7 +48,7 @@
 3. 弹奏MIDI键盘时，对应的计算机键将被触发，如同正常键盘输入
 4. 踩下踏板（默认为Control 64）可切换到备用映射方案，松开回到主映射
 
-![MIDIType界面预览](pianodesign.jpg)
+![MIDIType界面预览](程序示意图.png)
 
 ### 自定义映射
 
@@ -155,10 +155,7 @@ midiType/
    - 确认`music_mode`已在config.json中设置为true
    - 检查音频文件是否存在于正确位置
    - 确保命名格式符合要求
-
-## 授权协议
-
-本项目基于MIT协议发布。详见 [LICENSE](LICENSE) 文件。
+   
 
 ## 贡献指南
 
@@ -177,3 +174,33 @@ midiType/
 ## 致谢
 
 感谢所有为此项目提供支持和帮助的人。
+
+## 许可证
+
+本项目采用 MIT 许可证。
+
+```
+MIT License
+
+Copyright (c) 2025 NikolaStarx
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+详细信息请查看 [LICENSE](LICENSE) 文件。
